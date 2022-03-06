@@ -7,5 +7,23 @@ export class AppController {
 
   @Get("/")
   @Render('index')
-  index(){}
+  index(){
+    return {
+      title: "Home Page - Online Store"
+    };
+  }
+
+  @Get("/about")
+  @Render('about')
+  about() {
+    let viewData = [];
+    viewData["description"] = "This is an about page ...";
+    viewData["author"] = "Deleloped by: Mavro";
+    let data1 = 'About us - Online Store';
+    return {
+      title: data1,
+      subtitle: "About us",
+      viewData: viewData
+    };
+  }
 }
