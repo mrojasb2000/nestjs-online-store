@@ -1,29 +1,29 @@
-import { Controller, Get, Render } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Render } from "@nestjs/common";
+import { AppService } from "./app.service";
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get("/")
-  @Render('index')
-  index(){
+  @Render("index")
+  index() {
     return {
-      title: "Home Page - Online Store"
+      title: "Home Page - Online Store",
     };
   }
 
   @Get("/about")
-  @Render('about')
+  @Render("about")
   about() {
     let viewData = [];
     viewData["description"] = "This is an about page ...";
     viewData["author"] = "Deleloped by: Mavro";
-    let data1 = 'About us - Online Store';
+    let data1 = "About us - Online Store";
     return {
       title: data1,
       subtitle: "About us",
-      viewData: viewData
+      viewData: viewData,
     };
   }
 }
