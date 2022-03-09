@@ -68,6 +68,15 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
+## Database MySQL
+
+Connect to MySQL instance
+
+```
+$ mysql -h 0.0.0.0 -P 3306 -u root -p ******
+mysql>
+```
+
 ## License
 
 Nest is [MIT licensed](LICENSE).
