@@ -26,7 +26,7 @@ export class Product {
   }
 
   getName() {
-    return this.name;
+    return this.name.toLocaleUpperCase();
   }
 
   setName(name: string) {
